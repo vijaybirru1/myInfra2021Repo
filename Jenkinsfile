@@ -23,7 +23,7 @@ pipeline {
         stage (" Action") {
             steps {
                 echo "Terraform action is --> creating ec2"
-                sh ('terraform destroy --auto-approve') 
+                sh ('terraform  apply --auto-approve') 
            }
      
         }
