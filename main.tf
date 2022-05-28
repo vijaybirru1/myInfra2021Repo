@@ -11,15 +11,14 @@ terraform {
 
 provider "aws" {
   profile = "default"
-  region  = "us-east-2"
+  region  = "us-west-2"
 }
 
-resource "aws_instance" "Terraform-POC" {
-  ami           = "ami-0fa49cc9dc8d62c84"
+resource "aws_instance" "app_server" {
+  ami           = "ami-830c94e3"
   instance_type = "t2.micro"
 
   tags = {
-    Name = Terraform
+    Name = "ExampleAppServerInstance"
   }
 }
-
