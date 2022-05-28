@@ -19,7 +19,7 @@ resource "aws_instance" "Terraform-POC" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = Terraf0rm-poc-dev
+    Name = Terraform
   }
 }
 
