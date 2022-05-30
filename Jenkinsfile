@@ -28,6 +28,7 @@ pipeline {
             steps {
                 echo "Terraform action is --> creating eks"
               sh 'terraform ${TF} --auto-approve'
+              sh 'terraform state list'
            }
      
         }
